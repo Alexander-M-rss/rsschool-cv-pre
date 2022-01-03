@@ -4,9 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oleksandr Muller</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="photo">
+            <img src="photo.webp" alt="photo">
+        </div>
+        <div class="contact">
+            <h1>Oleksandr Muller</h1>
+            <ul class="contact-list">
+                <li><h2>+380686806909</h2></li>
+                <li><h2>oleksandr-m-rss@gmail.com</h2></li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#expirience">Work expirience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code-example">Code example</a></li>
+            <li><a href="#lang">Languages</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section" id="about"> 
+            <h2> About </h2>
+            <p>
+                Highly skilled telecommunication engineer with over 18 years’ experience. Thoroughly proficient in 
+                all  aspects of installing, maintaining, and designing telecommunications systems for cellular
+                transmissions. Deep familiarity with digital and analog equipment and tools. Top
+                levels of manual dexterity and technical knowledge result in a track record of excellent work
+                completed within time and budgetary constraints. Detail-oriented troubleshooter who takes pride
+                in coming up with optimally effective solutions that account for all aspects and ramifications.
+                Friendly and professional, builds great rapport with team members and clients alike.
+            </p>
+        </section>
+
+        <section class="section" id="expirience">
+            <h2>Work expirience</h2>
+            <h3>Telecommunication Engineer</h3>
+            <h3>Tele2</h3>
+            <h4>October 2012 – present</h4>
+            <ul>
+                <li>Manage installation and/or upgrade of systems.</li>
+                <li>Supervise team members performing installations or repairs.</li>
+                <li>Prepare instructions and training materials for system operations.</li>
+                <li>Lead team in comprehensive problem analysis for existing systems.</li>
+                <li>Analyze and solve system and equipment malfunctions and inefficiencies.</li>
+                <li>Schedule maintenance and service for equipment and systems.</li>
+                <li>Reduce incidence of breakdowns by designing and implementing improved maintenance and service 
+                    routine.
+                </li>
+                <li>Train new team members.</li>
+            </ul>
+            <br><br>
+            <h3>Telecommunication Engineer</h3>
+            <h3>Tele2</h3>
+            <h4>April 2005 – October 2012</h4>
+            <ul>
+                <li>Provided technical support for variety of systems.</li>
+                <li>Supervised team of engineers and technicians throughout major projects.</li>
+                <li>Completed project analysis reports.</li>               
+                <li>Designed optimal, cost-effective, high-function solutions to meet clients’ specific needs.</li>
+                <li>Generated and maintained service documentation.</li>
+                <li>Created instructional materials for operation and maintenance of equipment</li>
+                <li>Inspected and tested equipment.</li>
+                <li>Sourced, purchased, and installed new equipment and components.</li>
+                <li>Maintained optimal function via planned upgrades and regular service.</li>
+                <li>Upgraded company productivity by integrating existing telecommunications to function on a unified 
+                    platform.
+                </li>
+            </ul>
+            <br><br>
+            <h3>Assistant Telecommunication Engineer</h3>
+            <h3>Tele2</h3>
+            <h4>June 2003 – April 2005</h4>
+            <ul>
+                <li>Provided technical support for variety of systems.</li>
+                <li>Prepared reports and documentation for ongoing projects and routine service calls</li>
+                <li>Installed new system components.</li>
+                <li>Repaired and replaced components as needed.</li>
+                <li>Checked and tested new installations and repairs to ensure functionality.</li>
+                <li>Assisted senior engineer in working on large-scale installations and upgrades.</li>
+                <li>Coordinated services with clients.</li>
+                <li>Communicated with telecom service providers to ensure optimal service.</li>
+             </ul>
+        </section>
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Master of Science in Computer Science – 2003<br>Massachusetts Institute of Technology</li>
+                <li>Bachelor of Science in Electrical Engineering – 2001<br>Massachusetts Institute of Technology</li>
+                <li>JavaScript/Front-end - in progress<br>Rolling Scopes School</li>
+            </ul>
+        </section>
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        <section class="section" id="code-example">
+            <h2>Code example</h2>
+            <pre>
+                <code class="code">
+<span class="code-coral">function</span> <span class="code-purple">nextBigger</span>(n) {
+  <span class="code-coral">const</span> str <span class="code-blue">>=</span> <span class="code-coral">String</span>(n);
+  <span class="code-coral">const</span> len <span class="code-blue">=</span> str.<span class="code-blue">length</span>;
+
+  <span class="code-coral">if</span> (len <span class="code-blue">=== 1</span>) <span class="code-coral">return</span> <span class="code-blue">-1</span>;
+
+  <span class="code-coral">for</span> (<span class="code-coral">let</span> i <span class="code-blue">=</span> len <span class="code-blue">- 2</span>; i <span class="code-blue">>= 0</span>; <span class="code-blue">i--</span>) {
+    <span class="code-coral">let</span> index <span class="code-blue">=</span> <span class="code-purple">findNextBiggerDigit</span>(str, i);
+    <span class="code-coral">if</span> (index <span class="code-blue">> -1</span>) {
+      <span class="code-coral">let</span> arr <span class="code-blue">=</span> str.<span class="code-purple">split</span>(<span class="code-blue">""</span>);
+      arr[i] <span class="code-blue">=</span> str[index];
+      arr[index] <span class="code-blue">=</span> str[i];
+      <span class="code-coral">return</span> <span class="code-purple">parseInt</span>(
+        arr
+          .<span class="code-purple">slice</span>(<span class="code-blue">0</span>, i + <span class="code-blue">1</span>)
+          .<span class="code-purple">concat</span>(arr.<span class="code-purple">slice</span>(i <span class="code-blue">+ 1</span>, arr.<span class="code-blue">length</span>).<span class="code-purple">sort</span>())
+          .<span class="code-purple">join</span>(<span class="code-blue">""</span>)
+      );
+    }
+  }
+  <span class="code-coral">return</span> <span class="code-blue">-1</span>;
+}                
+            </code>
+            </pre>
+        </section>
+        <section class="section" id="lang">
+            <h2>Languages</h2>
+            <ul>
+                <li>English - fluent</li>
+                <li>Ukrainian - excellent</li>
+                <li>Russian - native</li>
+            </ul>
+        </section> 
+    </main>
+    <footer>
+        <ul class="footer">
+            <li>© 2022 by Oleksandr Muller</li>
+            <li class="footer-right"><a href=https://github.com/alexander-m-rss/>GitHub</a><a href="https://rs.school/js/">
+                <img src="rs_school_js.png"  alt="Rolling Scope School logo" width="50">
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
