@@ -12,10 +12,27 @@ header {
     background: blue;
 
 }
+
 .section {
     background: blue;
     padding: 5px;
     margin: 5px;
+}
+
+a:link {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
 }
 
 .menu {
@@ -26,24 +43,9 @@ header {
     margin: 5px;
 }
 
-.menu a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
-.menu a:hover {
-    color: red;
-}
-
 .photo {
     padding: 0px;
     margin: 3px 0px 0px 3px;
-}
-
-.contact > h1 {
-    margin: 0px;
-    padding: 0px;
 }
 
 .contact {
@@ -88,21 +90,4 @@ p {
     align-content: center;
     padding: 5px;
     margin: 5px;
-}
-.footer li {
-    color: white;
-}
-
-.footer li > a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: red;
-}
-
-.footer-right {
-    text-align: right;
 }
