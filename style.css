@@ -1,0 +1,110 @@
+:root {
+    --main-container-width: 1268px;
+}
+
+* {
+    box-sizing: border-box;
+}    
+
+body {
+    background: #cfe7fa;
+    font-family: Verdana,sans-serif;
+    color: #ffffff;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    margin: auto auto;
+    width: var(--main-container-width);
+    padding: 0px;
+}
+  
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    background: #6393c1;
+
+}
+
+.section {
+    background: #6393c1;
+    padding: 5px;
+    margin: 5px;
+}
+
+a:link {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+.menu {
+    display: flex;
+    background: #6393c1;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.photo {
+    padding: 0px;
+    margin: 3px 0px 0px 3px;
+}
+
+.contact {
+    flex-grow: 1;
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+}
+
+.contact-list {
+    list-style-type: none;
+}
+
+.code {
+    display: block;
+    margin: 5px;
+    padding:5px;
+    background: #202428;
+    color: #cbc6c0;
+}
+
+.code-coral {
+    color: #fc7167;
+}
+
+.code-purple {
+    color: #a379d4;
+}
+
+.code-blue {
+    color: #67b1eb;
+}
+
+p { 
+    text-indent: 30px;
+}
+
+.footer {
+    display: flex;
+    background: #6393c1;
+    list-style-type: none;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+}
