@@ -1,20 +1,37 @@
+:root {
+    --main-container-width: 1268px;
+}
+
+* {
+    box-sizing: border-box;
+}    
+
 body {
-    background: linear-gradient(to top, #cfe7fa, #6393c1);
+    background: #cfe7fa;
     font-family: Verdana,sans-serif;
     color: #ffffff;
-    margin: 0 auto;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    margin: auto auto;
+    width: var(--main-container-width);
+    padding: 0px;
 }
   
 header {
     display: flex;
     flex-direction: row;
     margin: 5px;
-    background: blue;
+    background: #6393c1;
 
 }
 
 .section {
-    background: blue;
+    background: #6393c1;
     padding: 5px;
     margin: 5px;
 }
@@ -37,7 +54,7 @@ a:hover {
 
 .menu {
     display: flex;
-    background: blue;
+    background: #6393c1;
     list-style-type: none;
     justify-content: space-around;
     margin: 5px;
@@ -84,7 +101,7 @@ p {
 
 .footer {
     display: flex;
-    background: blue;
+    background: #6393c1;
     list-style-type: none;
     justify-content: space-between;
     align-content: center;
